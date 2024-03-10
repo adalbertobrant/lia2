@@ -1,4 +1,8 @@
-library(rvest)
+# References:
+# http://notesofdabbler.github.io/201408_hotelReview/scrapeTripAdvisor.html
+# https://github.com/hadley/rvest/blob/master/demo/tripadvisor.R
+# http://notesofdabbler.github.io/201408_hotelReview/scrapeTripAdvisor.htmllibrary(rvest)
+
 library(dplyr)
 library(data.table)
 library(readxl)
