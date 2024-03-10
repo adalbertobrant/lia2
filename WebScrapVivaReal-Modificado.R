@@ -61,11 +61,13 @@ for (i in 2:nrow(DFtextos)){
   qt <- anunc_terms[[1]][7]
   quartos[i] <- ifelse(is.na(qt)|qt=="",1,qt)
   indice_mes <- which(anunc_terms[[1]] %in% "/Mês")
+# faz verificação para conseguir mais dados 
   if (length(anunc_terms[[1]]) >= indice_mes) {
     aluguel[i] <- anunc_terms[[1]][indice_mes - 1]
   } else {
     aluguel[i] <- NA  # ou algum outro valor padrão
   }
+# fim da verificação
 }
 
 DFunico <- data.frame(metros2,quartos,aluguel)
